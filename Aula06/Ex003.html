@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa em JS</title>
+    <style>/*Comentario em CSS*/
+        body {
+            background-color: rgb(76, 76, 212);
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1 {
+            color: black;
+        }
+    </style>
+</head><!--Comentario em html -->
+<body>
+    <h1>Aprendendo a Somar em JS
+    </h1>
+    <p>window.prompt retorna uma string</p>
+    <p>é preciso converter usando Number.parseInt ou Float
+    </p>é posssivel usar apenas Number(n)</p>
+    </p->para converter número para string utilize String(n)
+    </p>
+    <script>
+    // window.prompt retorna uma string
+    // é preciso converter usando Number.parseInt ou Float
+    // é posssivel usar apenas Number(n)
+    // para converter número para string utilize String(n)
+       var n1 = Number.parseFloat(window.prompt('Digite um Número: '))
+       var n2 = Number.parseFloat(window.prompt('Digite outro Número: '))
+       var soma = n1 + n2
+       window.alert(+ n1 +' mais '+ n2 +' é ' + soma)//usa concatenação
+       window.alert(`${n2} mais ${n1} é ${soma}`)//usa template string
+    // + para concatenação (string +string)
+    // + para adição (number + number)
+       
+    </script>
+</body>
+</html>
