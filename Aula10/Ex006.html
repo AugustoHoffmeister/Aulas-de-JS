@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#interajir {
+            background: yellowgreen;
+            font: 20pt Arial;
+            color: black;
+            height: 100px;
+            width: 200px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="interajir" > 
+        Interaja
+    </div>
+    <script>
+        var interajir = window.document.getElementById('interajir')
+        interajir.addEventListener('click',clicar)
+        interajir.addEventListener('mouseenter',entrar)
+        interajir.addEventListener('mouseout',sair)
+
+        function clicar() {
+            interajir.innerText = 'Aguardando...'
+            interajir.style.background = 'red'
+        }
+        function entrar() {
+            interajir.innerText = 'Entrou.'
+        }
+        function sair() {
+            interajir.innerText = 'Saiu.'
+            interajir.style.background = 'yellowgreen'
+        }
+
+    </script>
+</body>
+</html>
