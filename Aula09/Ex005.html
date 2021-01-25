@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros Passos com DOM</title>
+    <meta http-equiv="U-UA-compatible" content="ie=edge">
+    <title>Iniciando DOM</title>
     <style>
         body{
-        background: rgb(77, 58, 58);
+        background:blue;
         color: white;
         font: normal 18 pt Arial;
         }
@@ -14,12 +15,27 @@
     </style>
 </head>
 <body>
-    <h1>Estudos de DOM</h1>
-    <p>Aqui vai o resultado</p>
+    <h1>Estudo de DOM</h1>
+    <p>Resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JS.</p>
-    <div>Clique Aqui</div>
+    <div id='clique'>Clique</div>
     <script>
+        //Variaveis
+        var fundo = window.document.body
+        fundo.style.background = 'green'
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'black'//muda a cor do paragrafo
+        //var divi = window.document.getElementById('clique')
+        var divi = window.document.querySelector('div#clique')
+        //Escrevendo
+        divi.style.background = 'blue'
+        divi.innerText = 'Loading...'
+        //window.document.write('Conteudo do paragrafo: '+ p1.innerHTML)
+        //window.alert(p1.innerText)
 
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.url)
+        //window.document.write(window.document.charset)
     </script>
 </body>
 </html>
