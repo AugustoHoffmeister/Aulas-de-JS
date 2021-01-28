@@ -1,0 +1,23 @@
+function fatorial(n) {
+    let fat = 1
+    for(let c = n; c > 1; c--){
+        fat *= c
+    }
+    return fat
+}
+console.log(fatorial(5))
+// 5! = Fatorial de 5
+// 5! = 5 x 4 x 3 x 2 x 1 = 120
+
+//RECURSIVIDADE
+// 5! = 5 x 4!
+// n! = n x (n-1)!
+// 1! = 1
+function fatorial2(n) {
+    if(n == 1) {
+        return 1
+    }else {
+        return n * fatorial2(n-1)
+    }
+}
+console.log(fatorial2(5))
