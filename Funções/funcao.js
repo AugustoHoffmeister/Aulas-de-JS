@@ -1,11 +1,11 @@
-// Realiza uma tarefa e não retorna nada
+// Realiza a tarefa e não retorna nada
 function dizerNome(){
     console.log('Augusto')
 }
 dizerNome();
 console.log('---------------------')
 
-//Realiza uma tarefa e retorna nada
+//Realiza a tarefa e retorna nada
 function mutiplicarPor2(valor){
     return valor * 2;
 }
